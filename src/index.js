@@ -1,11 +1,13 @@
 require('dotenv').config();
 const express = require('express');
+const multer = require('./multer');
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.post('/upload', multer.single('arquivo'), async (req, res) => {
+    console.log(req.file);
     return res.json({ mensagem: 'Tudo certo!' })
 });
 
