@@ -1,0 +1,19 @@
+{
+  "name": "upload-de-arquivos",
+  "version": "1.0.0",
+  "description": "Desenvolvido durante o curso Full Stack da Cubos Academy.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
